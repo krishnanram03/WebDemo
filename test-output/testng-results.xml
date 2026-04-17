@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-17T18:54:51 IST" name="Default suite" finished-at="2026-04-17T18:55:01 IST" duration-ms="9274">
+  <suite started-at="2026-04-17T20:58:39 IST" name="Default suite" finished-at="2026-04-17T20:58:43 IST" duration-ms="3505">
     <groups>
     </groups>
-    <test started-at="2026-04-17T18:54:51 IST" name="Default test" finished-at="2026-04-17T18:55:01 IST" duration-ms="9274">
-      <class name="Framework.TestScenarios.Test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Framework.TestScenarios.Test1@61df66b6]" started-at="2026-04-17T18:54:51 IST" name="setup" finished-at="2026-04-17T18:54:53 IST" duration-ms="2075" status="PASS">
+    <test started-at="2026-04-17T20:58:39 IST" name="Default test" finished-at="2026-04-17T20:58:43 IST" duration-ms="3505">
+      <class name="Framework.TestScenarios.ErrorHandlingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Framework.TestScenarios.ErrorHandlingTest@61df66b6]" started-at="2026-04-17T20:58:39 IST" name="setup" finished-at="2026-04-17T20:58:40 IST" duration-ms="1222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="orderPlacement()[pri:0, instance:Framework.TestScenarios.Test1@61df66b6]" started-at="2026-04-17T18:54:53 IST" name="orderPlacement" finished-at="2026-04-17T18:55:00 IST" duration-ms="7102" status="PASS">
+        <test-method signature="incorrectLogin()[pri:0, instance:Framework.TestScenarios.ErrorHandlingTest@61df66b6]" started-at="2026-04-17T20:58:40 IST" name="incorrectLogin" finished-at="2026-04-17T20:58:43 IST" duration-ms="2132" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderPlacement -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Framework.TestScenarios.Test1@61df66b6]" started-at="2026-04-17T18:55:00 IST" name="tearDown" finished-at="2026-04-17T18:55:01 IST" duration-ms="73" status="PASS">
+        </test-method> <!-- incorrectLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Framework.TestScenarios.ErrorHandlingTest@61df66b6]" started-at="2026-04-17T20:58:43 IST" name="tearDown" finished-at="2026-04-17T20:58:43 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Framework.TestScenarios.Test1 -->
+      </class> <!-- Framework.TestScenarios.ErrorHandlingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

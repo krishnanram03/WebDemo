@@ -31,6 +31,8 @@ public class ProductsPage extends Reuseable
 	
     By toastMessage=By.cssSelector(".toast-container");
     
+    By loginErrorToast=By.cssSelector(".ng-tns-c4-5.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error");
+    
     
   
     
@@ -69,6 +71,12 @@ public class ProductsPage extends Reuseable
 		CartsPage cartPage= new CartsPage(driver);
 		
 		return cartPage;
+	}
+	
+	public String incorrectLoginMessage()
+	{
+		return driver.findElement(loginErrorToast).getText();
+		
 	}
 		
 }

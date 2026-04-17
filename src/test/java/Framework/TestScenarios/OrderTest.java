@@ -12,7 +12,7 @@ import Framework.PageObjects.CheckOutsPage;
 import Framework.PageObjects.LoginPage;
 import Framework.PageObjects.ProductsPage;
 
-public class Test1 extends Base
+public class OrderTest extends Base
 {
 @Test
 public void orderPlacement() throws Exception

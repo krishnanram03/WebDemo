@@ -23,7 +23,10 @@ WebDriverWait wait;
 	public void visibilityOfElementLocated(By locator)
 	{
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	 
 	}
+	
+	
 	
 	public void visibilityOfAllElements(List<WebElement> elements)
 	{
