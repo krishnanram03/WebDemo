@@ -1,8 +1,13 @@
 package Framwork.Utilities;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -50,5 +55,13 @@ WebDriverWait wait;
 	  {
 		  visibilityOfElementLocated(locator);
 		  driver.findElement(locator).click();
+	  }
+	  
+	  public String getScreenshot(String methodName) throws Exception
+	  {
+		  File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	      File createFile= new File(System.getProperty("user.dir")+"\\Screenshots\\"+methodName+".png");
+	      FileUtils.copyFile(source,createFile);
+	      return System.getProperty("user.dir")+"\\Screenshots\\"+methodName+".png";
 	  }
 }

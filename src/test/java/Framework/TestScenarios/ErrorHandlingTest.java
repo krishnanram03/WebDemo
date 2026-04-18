@@ -9,6 +9,7 @@ import Framework.PageObjects.ProductsPage;
 
 public class ErrorHandlingTest extends Base
 {
+@SuppressWarnings("unused")
 @Test
 public void incorrectLogin() throws Exception
 {
@@ -21,7 +22,7 @@ public void incorrectLogin() throws Exception
 
 	//String errorMessage=product.incorrectLoginMessage();
 	
-	Assert.assertEquals( "Incorrect email or password.", "Incorrect email or password.");
+	Assert.assertEquals( "Incorrect emai or password.", "Incorrect email or password.");
 
 	}
 	

@@ -9,9 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import Framework.PageObjects.LoginPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class Base 
 
@@ -32,25 +31,25 @@ public WebDriver setup() throws Exception
 	url=prop.getProperty("url");
 	if(browser.equalsIgnoreCase("chrome"))
 	{
-		WebDriverManager.chromedriver().setup();
+	
 		driver= new ChromeDriver();
 
 	}
 	else if(browser.equalsIgnoreCase("firefox"))
 	{
-		WebDriverManager.firefoxdriver().setup();
+	
 		driver= new FirefoxDriver();
 
 	}
 	else if(browser.equalsIgnoreCase("safari"))
 	{
-		WebDriverManager.safaridriver().setup();
+
 		driver= new SafariDriver();
 		
 	}
 	else if(browser.equalsIgnoreCase("edge"))
 	{
-		WebDriverManager.edgedriver().setup();
+
 		driver= new EdgeDriver();
 
 	}

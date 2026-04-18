@@ -1,0 +1,16 @@
+[
+{
+	"email":"Dumm1",
+	"password":"Dumm2",
+	"products":
+	["ADIDAS ORIGINAL"]
+},
+{
+	"email":"Dumm3",
+		"password":"Dumm4",
+		"products":[
+				"ADIDAS ORIGINAL",
+				"ZARA COAT 3"
+		]
+}		
+]

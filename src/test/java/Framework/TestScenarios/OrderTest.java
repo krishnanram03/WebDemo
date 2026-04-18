@@ -39,6 +39,14 @@ public void orderPlacement() throws Exception
 	checkoutPage.clickOnPlaceOrder();
 	
 	}
+
+/*@DataProvider
+public void getData()
+{
+	Object [][] data= {{"",""},{"",""}};
+	
+	
+}*/
 	
 	
 	
