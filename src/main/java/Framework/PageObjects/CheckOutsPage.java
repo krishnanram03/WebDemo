@@ -44,12 +44,12 @@ public class CheckOutsPage extends Reuseable
 
 	}
 
-	public boolean orderVerification(List<String> expectedProductNames)
+	public boolean orderVerification(List<String> expectedProductName)
 	{
      
 	List<WebElement> orderPageList=driver.findElements(By.xpath("//div[@class='item__details']"));
 	
-	boolean val=orderPageList.stream().anyMatch(item->expectedProductNames.contains(item.findElement(By.xpath(".//div[@class='item__title']")).getText().trim().toUpperCase()));
+	boolean val=orderPageList.stream().anyMatch(item->expectedProductName.contains(item.findElement(By.xpath(".//div[@class='item__title']")).getText().trim().toUpperCase()));
  
 	System.out.println(val);
      return val;

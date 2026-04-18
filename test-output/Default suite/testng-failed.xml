@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Framework.TestScenarios.ErrorHandlingTest">
+      <class name="Framework.TestScenarios.OrderTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="incorrectLogin"/>
+          <include name="orderPlacement" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Framework.TestScenarios.ErrorHandlingTest -->
+      </class> <!-- Framework.TestScenarios.OrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

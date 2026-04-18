@@ -45,12 +45,12 @@ public class ProductsPage extends Reuseable
 	}
 	
 
-	public void productSelectionFromList(List<String> expectedProductNames)
+	public void productSelectionFromList(List<String> expectedProductName)
 	{
 	
 		visibilityOfAllElements(listOfProducts);
 		
-		getProductList().stream().filter(item->expectedProductNames.contains(item.findElement(productText).getText())).forEach(item->
+		getProductList().stream().filter(item->expectedProductName.contains(item.findElement(productText).getText())).forEach(item->
 		{
 		
 	        WebElement button = item.findElement(addtoCart);
