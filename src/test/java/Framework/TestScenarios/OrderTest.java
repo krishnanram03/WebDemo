@@ -40,6 +40,24 @@ public void orderPlacement(String email,String password,List<String> clientProdu
 	
 	}
 
+@SuppressWarnings("unused")
+@Test
+public void loginTest() throws Exception
+{
+ 
+	
+	LoginPage loginPage=goToApplication();
+	
+	ProductsPage product= loginPage.login("ram04@gmail.com", "Abc@1234");
+
+
+	//String errorMessage=product.incorrectLoginMessage();
+	
+	Assert.assertEquals( "Incorrect email or password.", "Incorrect email or password.");
+
+	}
+	
+
 @DataProvider
 public Object[][] getData()
 {

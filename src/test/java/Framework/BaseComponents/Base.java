@@ -27,7 +27,7 @@ public WebDriver setup() throws Exception
 	fistream= new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Framework\\Resources\\Global.properties");
 	prop= new Properties();
 	prop.load(fistream);
-	String browser=prop.getProperty("browser");
+	String browser=System.getProperty("browserName")!=null ? System.getProperty("browserName") : prop.getProperty("browser");
 	url=prop.getProperty("url");
 	if(browser.equalsIgnoreCase("chrome"))
 	{
