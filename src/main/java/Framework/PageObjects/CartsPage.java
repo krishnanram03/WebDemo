@@ -15,7 +15,7 @@ WebDriver driver;
 		this.driver=driver;
 	}
 
-  By checkOutBtn=By.xpath("//button[text()='Checkout']");
+  private By checkOutBtn=By.xpath("//button[text()='Checkout']");
 
   public CheckOutsPage checkOutPage()
   {

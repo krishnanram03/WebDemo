@@ -22,9 +22,9 @@ public class CheckOutsPage extends Reuseable
 	}
 
 	@FindBy(xpath="//input[@placeholder='Select Country']")
-	WebElement countrySelectionBox;
+	private WebElement countrySelectionBox;
 
-	By placeOrder =By.cssSelector(".btnn.action__submit.ng-star-inserted");
+	private By placeOrder =By.cssSelector(".btnn.action__submit.ng-star-inserted");
 
 
 	//@FindBy(xpath="//div[@class='item__details']//div[@class='item__title']")

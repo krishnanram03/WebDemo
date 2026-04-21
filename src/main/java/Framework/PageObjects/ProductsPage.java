@@ -23,15 +23,15 @@ public class ProductsPage extends Reuseable
 	}
 	
 	@FindBy(xpath="//section[@id='products']//div[@class='row']/div")
-	List<WebElement> listOfProducts;
+	private List<WebElement> listOfProducts;
 	
-	By productText=By.xpath(".//div[@class='card']//b");
+	private By productText=By.xpath(".//div[@class='card']//b");
 	
-	By addtoCart = By.xpath(".//button[normalize-space()='Add To Cart']");
+	private By addtoCart = By.xpath(".//button[normalize-space()='Add To Cart']");
 	
-    By toastMessage=By.cssSelector(".toast-container");
+	private By toastMessage=By.cssSelector(".toast-container");
     
-    By loginErrorToast=By.cssSelector(".ng-tns-c4-5.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error");
+	private By loginErrorToast=By.cssSelector(".ng-tns-c4-5.ng-star-inserted.ng-trigger.ng-trigger-flyInOut.ngx-toastr.toast-error");
     
     
   

@@ -19,13 +19,13 @@ WebDriver driver;
  }
 	
 	@FindBy(id="userEmail")
-	WebElement userName;
+	private WebElement userName;
 	
 	@FindBy(id="userPassword")
-	WebElement userPassword;
+	private WebElement userPassword;
 	
 	@FindBy(name="login")
-	WebElement loginBtn;
+	private WebElement loginBtn;
 	
 
 	public ProductsPage login(String username,String password)
